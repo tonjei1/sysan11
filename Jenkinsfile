@@ -14,6 +14,7 @@ pipeline {
 			stage('test file'){
 				steps{
 					sh 'bash -x test.sh'
+					sh 'bash -x just_build.sh'
 				}
 			}
 			
