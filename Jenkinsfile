@@ -11,6 +11,11 @@ pipeline {
 					sh 'bash -x systemCheck.sh'
 				}
 			}
+			stage('test file'){
+				steps{
+					sh 'bash -x test.sh'
+				}
+			}
 			
 		}
 }
